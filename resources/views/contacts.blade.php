@@ -17,8 +17,8 @@
 
             <ul class="m-auto d-flex" style="list-style : none">
                 @foreach ($menus as $menu)
-                    <li class="me-3">
-                    <a class="text-white" href="{{ $menu }}">
+                    <li>
+                    <a class="text-white m-5" href="{{ $menu }}">
                     {{ $menu }}
                     </a>
                     </li>
