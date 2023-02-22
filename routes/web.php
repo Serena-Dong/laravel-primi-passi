@@ -19,3 +19,20 @@ Route::get('/', function () {
     $menus = ['home', 'contacts', 'about-us'];
     return view('home', compact('name', 'menus'));
 });
+
+Route::get('/home', function () {
+    $name = 'HOME';
+    $menus = ['home', 'contacts', 'about-us'];
+    return view('home', compact('name', 'menus'));
+});
+
+Route::get('/contacts', function () {
+    $name = 'CONTACTS';
+    $menus = ['home', 'contacts', 'about-us'];
+    return view('contacts', compact('name', 'menus'));
+});
+Route::get('/about-us', function () {
+    $name = 'ABOUT-US';
+    $menus = ['home', 'contacts', 'about-us'];
+    return view('contacts', compact('name', 'menus'));
+});
